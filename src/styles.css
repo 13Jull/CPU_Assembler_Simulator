@@ -1,0 +1,7 @@
+body {
+  --uno-apply: cursor-default;
+  --uno-apply: font-mono;
+  --uno-apply: font-ligatures-none;
+  --uno-apply: overscroll-none;
+  --uno-apply: select-none;
+}

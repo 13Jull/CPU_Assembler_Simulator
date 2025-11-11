@@ -1,0 +1,1848 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`parser should parse compare instruction 1`] = `
+[
+  {
+    "codes": [218, 0, 1,],
+    "instruction": {
+      "mnemonic": "CMP",
+      "opcode": 218,
+      "range": {
+        "from": 1,
+        "to": 4,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 5,
+          "to": 7,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 9,
+          "to": 11,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+    ],
+    "range": {
+      "from": 1,
+      "to": 11,
+    },
+  },
+  {
+    "codes": [219, 2, 1,],
+    "instruction": {
+      "mnemonic": "CMP",
+      "opcode": 219,
+      "range": {
+        "from": 12,
+        "to": 15,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 16,
+          "to": 18,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 20,
+          "to": 22,
+        },
+        "source": "01",
+        "type": "Number",
+        "value": "01",
+      },
+    ],
+    "range": {
+      "from": 12,
+      "to": 22,
+    },
+  },
+  {
+    "codes": [220, 3, 2,],
+    "instruction": {
+      "mnemonic": "CMP",
+      "opcode": 220,
+      "range": {
+        "from": 23,
+        "to": 26,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 3,
+        "range": {
+          "from": 27,
+          "to": 29,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+      {
+        "code": 2,
+        "range": {
+          "from": 31,
+          "to": 35,
+        },
+        "source": "[02]",
+        "type": "Address",
+        "value": "02",
+      },
+    ],
+    "range": {
+      "from": 23,
+      "to": 35,
+    },
+  },
+  {
+    "codes": [0,],
+    "instruction": {
+      "mnemonic": "END",
+      "opcode": 0,
+      "range": {
+        "from": 36,
+        "to": 39,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 36,
+      "to": 39,
+    },
+  },
+]
+`;
+
+exports[`parser should parse direct arithmetic instruction 1`] = `
+[
+  {
+    "codes": [160, 0, 1,],
+    "instruction": {
+      "mnemonic": "ADD",
+      "opcode": 160,
+      "range": {
+        "from": 1,
+        "to": 4,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 5,
+          "to": 7,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 9,
+          "to": 11,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+    ],
+    "range": {
+      "from": 1,
+      "to": 11,
+    },
+  },
+  {
+    "codes": [161, 2, 3,],
+    "instruction": {
+      "mnemonic": "SUB",
+      "opcode": 161,
+      "range": {
+        "from": 12,
+        "to": 15,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 16,
+          "to": 18,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+      {
+        "code": 3,
+        "range": {
+          "from": 20,
+          "to": 22,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+    ],
+    "range": {
+      "from": 12,
+      "to": 22,
+    },
+  },
+  {
+    "codes": [162, 0, 1,],
+    "instruction": {
+      "mnemonic": "MUL",
+      "opcode": 162,
+      "range": {
+        "from": 23,
+        "to": 26,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 27,
+          "to": 29,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 31,
+          "to": 33,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+    ],
+    "range": {
+      "from": 23,
+      "to": 33,
+    },
+  },
+  {
+    "codes": [163, 2, 3,],
+    "instruction": {
+      "mnemonic": "DIV",
+      "opcode": 163,
+      "range": {
+        "from": 34,
+        "to": 37,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 38,
+          "to": 40,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+      {
+        "code": 3,
+        "range": {
+          "from": 42,
+          "to": 44,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+    ],
+    "range": {
+      "from": 34,
+      "to": 44,
+    },
+  },
+  {
+    "codes": [166, 0, 1,],
+    "instruction": {
+      "mnemonic": "MOD",
+      "opcode": 166,
+      "range": {
+        "from": 45,
+        "to": 48,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 49,
+          "to": 51,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 53,
+          "to": 55,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+    ],
+    "range": {
+      "from": 45,
+      "to": 55,
+    },
+  },
+  {
+    "codes": [170, 2, 3,],
+    "instruction": {
+      "mnemonic": "AND",
+      "opcode": 170,
+      "range": {
+        "from": 56,
+        "to": 59,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 60,
+          "to": 62,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+      {
+        "code": 3,
+        "range": {
+          "from": 64,
+          "to": 66,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+    ],
+    "range": {
+      "from": 56,
+      "to": 66,
+    },
+  },
+  {
+    "codes": [171, 0, 1,],
+    "instruction": {
+      "mnemonic": "OR",
+      "opcode": 171,
+      "range": {
+        "from": 67,
+        "to": 69,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 70,
+          "to": 72,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 74,
+          "to": 76,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+    ],
+    "range": {
+      "from": 67,
+      "to": 76,
+    },
+  },
+  {
+    "codes": [172, 2, 3,],
+    "instruction": {
+      "mnemonic": "XOR",
+      "opcode": 172,
+      "range": {
+        "from": 77,
+        "to": 80,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 81,
+          "to": 83,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+      {
+        "code": 3,
+        "range": {
+          "from": 85,
+          "to": 87,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+    ],
+    "range": {
+      "from": 77,
+      "to": 87,
+    },
+  },
+  {
+    "codes": [0,],
+    "instruction": {
+      "mnemonic": "END",
+      "opcode": 0,
+      "range": {
+        "from": 88,
+        "to": 91,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 88,
+      "to": 91,
+    },
+  },
+]
+`;
+
+exports[`parser should parse immediate arithmetic instruction 1`] = `
+[
+  {
+    "codes": [176, 0, 1,],
+    "instruction": {
+      "mnemonic": "ADD",
+      "opcode": 176,
+      "range": {
+        "from": 1,
+        "to": 4,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 5,
+          "to": 7,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 9,
+          "to": 11,
+        },
+        "source": "01",
+        "type": "Number",
+        "value": "01",
+      },
+    ],
+    "range": {
+      "from": 1,
+      "to": 11,
+    },
+  },
+  {
+    "codes": [177, 1, 2,],
+    "instruction": {
+      "mnemonic": "SUB",
+      "opcode": 177,
+      "range": {
+        "from": 12,
+        "to": 15,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 1,
+        "range": {
+          "from": 16,
+          "to": 18,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+      {
+        "code": 2,
+        "range": {
+          "from": 20,
+          "to": 22,
+        },
+        "source": "02",
+        "type": "Number",
+        "value": "02",
+      },
+    ],
+    "range": {
+      "from": 12,
+      "to": 22,
+    },
+  },
+  {
+    "codes": [178, 2, 3,],
+    "instruction": {
+      "mnemonic": "MUL",
+      "opcode": 178,
+      "range": {
+        "from": 23,
+        "to": 26,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 27,
+          "to": 29,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+      {
+        "code": 3,
+        "range": {
+          "from": 31,
+          "to": 33,
+        },
+        "source": "03",
+        "type": "Number",
+        "value": "03",
+      },
+    ],
+    "range": {
+      "from": 23,
+      "to": 33,
+    },
+  },
+  {
+    "codes": [179, 3, 4,],
+    "instruction": {
+      "mnemonic": "DIV",
+      "opcode": 179,
+      "range": {
+        "from": 34,
+        "to": 37,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 3,
+        "range": {
+          "from": 38,
+          "to": 40,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+      {
+        "code": 4,
+        "range": {
+          "from": 42,
+          "to": 44,
+        },
+        "source": "04",
+        "type": "Number",
+        "value": "04",
+      },
+    ],
+    "range": {
+      "from": 34,
+      "to": 44,
+    },
+  },
+  {
+    "codes": [182, 0, 1,],
+    "instruction": {
+      "mnemonic": "MOD",
+      "opcode": 182,
+      "range": {
+        "from": 45,
+        "to": 48,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 49,
+          "to": 51,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 53,
+          "to": 55,
+        },
+        "source": "01",
+        "type": "Number",
+        "value": "01",
+      },
+    ],
+    "range": {
+      "from": 45,
+      "to": 55,
+    },
+  },
+  {
+    "codes": [186, 1, 2,],
+    "instruction": {
+      "mnemonic": "AND",
+      "opcode": 186,
+      "range": {
+        "from": 56,
+        "to": 59,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 1,
+        "range": {
+          "from": 60,
+          "to": 62,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+      {
+        "code": 2,
+        "range": {
+          "from": 64,
+          "to": 66,
+        },
+        "source": "02",
+        "type": "Number",
+        "value": "02",
+      },
+    ],
+    "range": {
+      "from": 56,
+      "to": 66,
+    },
+  },
+  {
+    "codes": [187, 2, 3,],
+    "instruction": {
+      "mnemonic": "OR",
+      "opcode": 187,
+      "range": {
+        "from": 67,
+        "to": 69,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 70,
+          "to": 72,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+      {
+        "code": 3,
+        "range": {
+          "from": 74,
+          "to": 76,
+        },
+        "source": "03",
+        "type": "Number",
+        "value": "03",
+      },
+    ],
+    "range": {
+      "from": 67,
+      "to": 76,
+    },
+  },
+  {
+    "codes": [188, 3, 4,],
+    "instruction": {
+      "mnemonic": "XOR",
+      "opcode": 188,
+      "range": {
+        "from": 77,
+        "to": 80,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 3,
+        "range": {
+          "from": 81,
+          "to": 83,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+      {
+        "code": 4,
+        "range": {
+          "from": 85,
+          "to": 87,
+        },
+        "source": "04",
+        "type": "Number",
+        "value": "04",
+      },
+    ],
+    "range": {
+      "from": 77,
+      "to": 87,
+    },
+  },
+  {
+    "codes": [0,],
+    "instruction": {
+      "mnemonic": "END",
+      "opcode": 0,
+      "range": {
+        "from": 88,
+        "to": 91,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 88,
+      "to": 91,
+    },
+  },
+]
+`;
+
+exports[`parser should parse instruction with 1 operand 1`] = `
+[
+  {
+    "codes": [164, 0,],
+    "instruction": {
+      "mnemonic": "INC",
+      "opcode": 164,
+      "range": {
+        "from": 8,
+        "to": 11,
+      },
+    },
+    "label": {
+      "identifier": "START",
+      "range": {
+        "from": 1,
+        "to": 6,
+      },
+    },
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 12,
+          "to": 14,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+    ],
+    "range": {
+      "from": 8,
+      "to": 14,
+    },
+  },
+  {
+    "codes": [165, 1,],
+    "instruction": {
+      "mnemonic": "DEC",
+      "opcode": 165,
+      "range": {
+        "from": 15,
+        "to": 18,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 1,
+        "range": {
+          "from": 19,
+          "to": 21,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+    ],
+    "range": {
+      "from": 15,
+      "to": 21,
+    },
+  },
+  {
+    "codes": [173, 2,],
+    "instruction": {
+      "mnemonic": "NOT",
+      "opcode": 173,
+      "range": {
+        "from": 22,
+        "to": 25,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 26,
+          "to": 28,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+    ],
+    "range": {
+      "from": 22,
+      "to": 28,
+    },
+  },
+  {
+    "codes": [154, 3,],
+    "instruction": {
+      "mnemonic": "ROL",
+      "opcode": 154,
+      "range": {
+        "from": 29,
+        "to": 32,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 3,
+        "range": {
+          "from": 33,
+          "to": 35,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+    ],
+    "range": {
+      "from": 29,
+      "to": 35,
+    },
+  },
+  {
+    "codes": [155, 0,],
+    "instruction": {
+      "mnemonic": "ROR",
+      "opcode": 155,
+      "range": {
+        "from": 36,
+        "to": 39,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 40,
+          "to": 42,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+    ],
+    "range": {
+      "from": 36,
+      "to": 42,
+    },
+  },
+  {
+    "codes": [156, 1,],
+    "instruction": {
+      "mnemonic": "SHL",
+      "opcode": 156,
+      "range": {
+        "from": 43,
+        "to": 46,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 1,
+        "range": {
+          "from": 47,
+          "to": 49,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+    ],
+    "range": {
+      "from": 43,
+      "to": 49,
+    },
+  },
+  {
+    "codes": [157, 2,],
+    "instruction": {
+      "mnemonic": "SHR",
+      "opcode": 157,
+      "range": {
+        "from": 50,
+        "to": 53,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 54,
+          "to": 56,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+    ],
+    "range": {
+      "from": 50,
+      "to": 56,
+    },
+  },
+  {
+    "codes": [192,],
+    "instruction": {
+      "mnemonic": "JMP",
+      "opcode": 192,
+      "range": {
+        "from": 57,
+        "to": 60,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": undefined,
+        "range": {
+          "from": 61,
+          "to": 66,
+        },
+        "source": "start",
+        "type": "Label",
+        "value": "START",
+      },
+    ],
+    "range": {
+      "from": 57,
+      "to": 66,
+    },
+  },
+  {
+    "codes": [193,],
+    "instruction": {
+      "mnemonic": "JZ",
+      "opcode": 193,
+      "range": {
+        "from": 67,
+        "to": 69,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": undefined,
+        "range": {
+          "from": 70,
+          "to": 75,
+        },
+        "source": "start",
+        "type": "Label",
+        "value": "START",
+      },
+    ],
+    "range": {
+      "from": 67,
+      "to": 75,
+    },
+  },
+  {
+    "codes": [194,],
+    "instruction": {
+      "mnemonic": "JNZ",
+      "opcode": 194,
+      "range": {
+        "from": 76,
+        "to": 79,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": undefined,
+        "range": {
+          "from": 80,
+          "to": 85,
+        },
+        "source": "start",
+        "type": "Label",
+        "value": "START",
+      },
+    ],
+    "range": {
+      "from": 76,
+      "to": 85,
+    },
+  },
+  {
+    "codes": [195,],
+    "instruction": {
+      "mnemonic": "JS",
+      "opcode": 195,
+      "range": {
+        "from": 86,
+        "to": 88,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": undefined,
+        "range": {
+          "from": 89,
+          "to": 94,
+        },
+        "source": "start",
+        "type": "Label",
+        "value": "START",
+      },
+    ],
+    "range": {
+      "from": 86,
+      "to": 94,
+    },
+  },
+  {
+    "codes": [196,],
+    "instruction": {
+      "mnemonic": "JNS",
+      "opcode": 196,
+      "range": {
+        "from": 95,
+        "to": 98,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": undefined,
+        "range": {
+          "from": 99,
+          "to": 104,
+        },
+        "source": "start",
+        "type": "Label",
+        "value": "START",
+      },
+    ],
+    "range": {
+      "from": 95,
+      "to": 104,
+    },
+  },
+  {
+    "codes": [197,],
+    "instruction": {
+      "mnemonic": "JO",
+      "opcode": 197,
+      "range": {
+        "from": 105,
+        "to": 107,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": undefined,
+        "range": {
+          "from": 108,
+          "to": 113,
+        },
+        "source": "start",
+        "type": "Label",
+        "value": "START",
+      },
+    ],
+    "range": {
+      "from": 105,
+      "to": 113,
+    },
+  },
+  {
+    "codes": [198,],
+    "instruction": {
+      "mnemonic": "JNO",
+      "opcode": 198,
+      "range": {
+        "from": 114,
+        "to": 117,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": undefined,
+        "range": {
+          "from": 118,
+          "to": 123,
+        },
+        "source": "start",
+        "type": "Label",
+        "value": "START",
+      },
+    ],
+    "range": {
+      "from": 114,
+      "to": 123,
+    },
+  },
+  {
+    "codes": [224, 0,],
+    "instruction": {
+      "mnemonic": "PUSH",
+      "opcode": 224,
+      "range": {
+        "from": 124,
+        "to": 128,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 129,
+          "to": 131,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+    ],
+    "range": {
+      "from": 124,
+      "to": 131,
+    },
+  },
+  {
+    "codes": [225, 1,],
+    "instruction": {
+      "mnemonic": "POP",
+      "opcode": 225,
+      "range": {
+        "from": 132,
+        "to": 135,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 1,
+        "range": {
+          "from": 136,
+          "to": 138,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+    ],
+    "range": {
+      "from": 132,
+      "to": 138,
+    },
+  },
+  {
+    "codes": [202, 0,],
+    "instruction": {
+      "mnemonic": "CALL",
+      "opcode": 202,
+      "range": {
+        "from": 139,
+        "to": 143,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 144,
+          "to": 145,
+        },
+        "source": "0",
+        "type": "Number",
+        "value": "0",
+      },
+    ],
+    "range": {
+      "from": 139,
+      "to": 145,
+    },
+  },
+  {
+    "codes": [204, 1,],
+    "instruction": {
+      "mnemonic": "INT",
+      "opcode": 204,
+      "range": {
+        "from": 146,
+        "to": 149,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 1,
+        "range": {
+          "from": 150,
+          "to": 151,
+        },
+        "source": "1",
+        "type": "Number",
+        "value": "1",
+      },
+    ],
+    "range": {
+      "from": 146,
+      "to": 151,
+    },
+  },
+  {
+    "codes": [240, 2,],
+    "instruction": {
+      "mnemonic": "IN",
+      "opcode": 240,
+      "range": {
+        "from": 152,
+        "to": 154,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 2,
+        "range": {
+          "from": 155,
+          "to": 156,
+        },
+        "source": "2",
+        "type": "Number",
+        "value": "2",
+      },
+    ],
+    "range": {
+      "from": 152,
+      "to": 156,
+    },
+  },
+  {
+    "codes": [241, 3,],
+    "instruction": {
+      "mnemonic": "OUT",
+      "opcode": 241,
+      "range": {
+        "from": 157,
+        "to": 160,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 3,
+        "range": {
+          "from": 161,
+          "to": 162,
+        },
+        "source": "3",
+        "type": "Number",
+        "value": "3",
+      },
+    ],
+    "range": {
+      "from": 157,
+      "to": 162,
+    },
+  },
+  {
+    "codes": [4,],
+    "instruction": {
+      "mnemonic": "ORG",
+      "opcode": null,
+      "range": {
+        "from": 163,
+        "to": 166,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 4,
+        "range": {
+          "from": 167,
+          "to": 168,
+        },
+        "source": "4",
+        "type": "Number",
+        "value": "4",
+      },
+    ],
+    "range": {
+      "from": 163,
+      "to": 168,
+    },
+  },
+  {
+    "codes": [5,],
+    "instruction": {
+      "mnemonic": "DB",
+      "opcode": null,
+      "range": {
+        "from": 169,
+        "to": 171,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 5,
+        "range": {
+          "from": 172,
+          "to": 173,
+        },
+        "source": "5",
+        "type": "Number",
+        "value": "5",
+      },
+    ],
+    "range": {
+      "from": 169,
+      "to": 173,
+    },
+  },
+  {
+    "codes": [54, 55,],
+    "instruction": {
+      "mnemonic": "DB",
+      "opcode": null,
+      "range": {
+        "from": 174,
+        "to": 176,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": [54, 55,],
+        "range": {
+          "from": 177,
+          "to": 181,
+        },
+        "source": "\\"67\\"",
+        "type": "String",
+        "value": "67",
+      },
+    ],
+    "range": {
+      "from": 174,
+      "to": 181,
+    },
+  },
+  {
+    "codes": [0,],
+    "instruction": {
+      "mnemonic": "END",
+      "opcode": 0,
+      "range": {
+        "from": 182,
+        "to": 185,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 182,
+      "to": 185,
+    },
+  },
+]
+`;
+
+exports[`parser should parse instruction with no operand 1`] = `
+[
+  {
+    "codes": [234,],
+    "instruction": {
+      "mnemonic": "PUSHF",
+      "opcode": 234,
+      "range": {
+        "from": 1,
+        "to": 6,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 1,
+      "to": 6,
+    },
+  },
+  {
+    "codes": [235,],
+    "instruction": {
+      "mnemonic": "POPF",
+      "opcode": 235,
+      "range": {
+        "from": 7,
+        "to": 11,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 7,
+      "to": 11,
+    },
+  },
+  {
+    "codes": [203,],
+    "instruction": {
+      "mnemonic": "RET",
+      "opcode": 203,
+      "range": {
+        "from": 12,
+        "to": 15,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 12,
+      "to": 15,
+    },
+  },
+  {
+    "codes": [205,],
+    "instruction": {
+      "mnemonic": "IRET",
+      "opcode": 205,
+      "range": {
+        "from": 16,
+        "to": 20,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 16,
+      "to": 20,
+    },
+  },
+  {
+    "codes": [0,],
+    "instruction": {
+      "mnemonic": "HALT",
+      "opcode": 0,
+      "range": {
+        "from": 21,
+        "to": 25,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 21,
+      "to": 25,
+    },
+  },
+  {
+    "codes": [255,],
+    "instruction": {
+      "mnemonic": "NOP",
+      "opcode": 255,
+      "range": {
+        "from": 26,
+        "to": 29,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 26,
+      "to": 29,
+    },
+  },
+  {
+    "codes": [254,],
+    "instruction": {
+      "mnemonic": "CLO",
+      "opcode": 254,
+      "range": {
+        "from": 30,
+        "to": 33,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 30,
+      "to": 33,
+    },
+  },
+  {
+    "codes": [253,],
+    "instruction": {
+      "mnemonic": "CLI",
+      "opcode": 253,
+      "range": {
+        "from": 34,
+        "to": 37,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 34,
+      "to": 37,
+    },
+  },
+  {
+    "codes": [252,],
+    "instruction": {
+      "mnemonic": "STI",
+      "opcode": 252,
+      "range": {
+        "from": 38,
+        "to": 41,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 38,
+      "to": 41,
+    },
+  },
+  {
+    "codes": [0,],
+    "instruction": {
+      "mnemonic": "END",
+      "opcode": 0,
+      "range": {
+        "from": 42,
+        "to": 45,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 42,
+      "to": 45,
+    },
+  },
+]
+`;
+
+exports[`parser should parse move instruction 1`] = `
+[
+  {
+    "codes": [208, 0, 1,],
+    "instruction": {
+      "mnemonic": "MOV",
+      "opcode": 208,
+      "range": {
+        "from": 1,
+        "to": 4,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 0,
+        "range": {
+          "from": 5,
+          "to": 7,
+        },
+        "source": "al",
+        "type": "Register",
+        "value": "AL",
+      },
+      {
+        "code": 1,
+        "range": {
+          "from": 9,
+          "to": 11,
+        },
+        "source": "01",
+        "type": "Number",
+        "value": "01",
+      },
+    ],
+    "range": {
+      "from": 1,
+      "to": 11,
+    },
+  },
+  {
+    "codes": [209, 1, 2,],
+    "instruction": {
+      "mnemonic": "MOV",
+      "opcode": 209,
+      "range": {
+        "from": 12,
+        "to": 15,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 1,
+        "range": {
+          "from": 16,
+          "to": 18,
+        },
+        "source": "bl",
+        "type": "Register",
+        "value": "BL",
+      },
+      {
+        "code": 2,
+        "range": {
+          "from": 20,
+          "to": 24,
+        },
+        "source": "[02]",
+        "type": "Address",
+        "value": "02",
+      },
+    ],
+    "range": {
+      "from": 12,
+      "to": 24,
+    },
+  },
+  {
+    "codes": [210, 3, 2,],
+    "instruction": {
+      "mnemonic": "MOV",
+      "opcode": 210,
+      "range": {
+        "from": 25,
+        "to": 28,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 3,
+        "range": {
+          "from": 29,
+          "to": 33,
+        },
+        "source": "[03]",
+        "type": "Address",
+        "value": "03",
+      },
+      {
+        "code": 2,
+        "range": {
+          "from": 35,
+          "to": 37,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+    ],
+    "range": {
+      "from": 25,
+      "to": 37,
+    },
+  },
+  {
+    "codes": [211, 3, 0,],
+    "instruction": {
+      "mnemonic": "MOV",
+      "opcode": 211,
+      "range": {
+        "from": 38,
+        "to": 41,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 3,
+        "range": {
+          "from": 42,
+          "to": 44,
+        },
+        "source": "dl",
+        "type": "Register",
+        "value": "DL",
+      },
+      {
+        "code": 0,
+        "range": {
+          "from": 46,
+          "to": 50,
+        },
+        "source": "[al]",
+        "type": "RegisterAddress",
+        "value": "AL",
+      },
+    ],
+    "range": {
+      "from": 38,
+      "to": 50,
+    },
+  },
+  {
+    "codes": [212, 1, 2,],
+    "instruction": {
+      "mnemonic": "MOV",
+      "opcode": 212,
+      "range": {
+        "from": 51,
+        "to": 54,
+      },
+    },
+    "label": null,
+    "operands": [
+      {
+        "code": 1,
+        "range": {
+          "from": 55,
+          "to": 59,
+        },
+        "source": "[bl]",
+        "type": "RegisterAddress",
+        "value": "BL",
+      },
+      {
+        "code": 2,
+        "range": {
+          "from": 61,
+          "to": 63,
+        },
+        "source": "cl",
+        "type": "Register",
+        "value": "CL",
+      },
+    ],
+    "range": {
+      "from": 51,
+      "to": 63,
+    },
+  },
+  {
+    "codes": [0,],
+    "instruction": {
+      "mnemonic": "END",
+      "opcode": 0,
+      "range": {
+        "from": 64,
+        "to": 67,
+      },
+    },
+    "label": null,
+    "operands": [],
+    "range": {
+      "from": 64,
+      "to": 67,
+    },
+  },
+]
+`;

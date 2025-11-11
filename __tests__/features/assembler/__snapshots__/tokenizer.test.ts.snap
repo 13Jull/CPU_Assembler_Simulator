@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`tokenizer should remove invalid escape 1`] = `
+[
+  {
+    "range": {
+      "from": 0,
+      "to": 7,
+    },
+    "source": "\\"f\\\\o\\\\o\\"",
+    "type": "String",
+    "value": "foo",
+  },
+]
+`;
+
+exports[`tokenizer should remove invalid escape 2`] = `
+[
+  {
+    "range": {
+      "from": 0,
+      "to": 7,
+    },
+    "source": "\\"\\\\0\\\\u1\\"",
+    "type": "String",
+    "value": "0u1",
+  },
+]
+`;
+
+exports[`tokenizer should skip comment at the end of the line 1`] = `
+[
+  {
+    "range": {
+      "from": 0,
+      "to": 4,
+    },
+    "source": "done",
+    "type": "Unknown",
+    "value": "DONE",
+  },
+  {
+    "range": {
+      "from": 4,
+      "to": 5,
+    },
+    "source": ":",
+    "type": "Colon",
+    "value": ":",
+  },
+  {
+    "range": {
+      "from": 25,
+      "to": 28,
+    },
+    "source": "end",
+    "type": "Unknown",
+    "value": "END",
+  },
+]
+`;
+
+exports[`tokenizer should skip line with comment 1`] = `
+[
+  {
+    "range": {
+      "from": 20,
+      "to": 23,
+    },
+    "source": "end",
+    "type": "Unknown",
+    "value": "END",
+  },
+]
+`;
+
+exports[`tokenizer should skip whitespace 1`] = `
+[
+  {
+    "range": {
+      "from": 3,
+      "to": 7,
+    },
+    "source": "done",
+    "type": "Unknown",
+    "value": "DONE",
+  },
+  {
+    "range": {
+      "from": 7,
+      "to": 8,
+    },
+    "source": ":",
+    "type": "Colon",
+    "value": ":",
+  },
+  {
+    "range": {
+      "from": 11,
+      "to": 14,
+    },
+    "source": "end",
+    "type": "Unknown",
+    "value": "END",
+  },
+]
+`;
+
+exports[`tokenizer should tokenize address 1`] = `
+[
+  {
+    "range": {
+      "from": 0,
+      "to": 2,
+    },
+    "source": "[]",
+    "type": "Address",
+    "value": "",
+  },
+  {
+    "range": {
+      "from": 3,
+      "to": 7,
+    },
+    "source": "[00]",
+    "type": "Address",
+    "value": "00",
+  },
+  {
+    "range": {
+      "from": 7,
+      "to": 11,
+    },
+    "source": "[al]",
+    "type": "Address",
+    "value": "AL",
+  },
+  {
+    "range": {
+      "from": 12,
+      "to": 19,
+    },
+    "source": "[ Bl  ]",
+    "type": "Address",
+    "value": "BL",
+  },
+]
+`;
+
+exports[`tokenizer should tokenize comma 1`] = `
+[
+  {
+    "range": {
+      "from": 0,
+      "to": 1,
+    },
+    "source": ",",
+    "type": "Comma",
+    "value": ",",
+  },
+  {
+    "range": {
+      "from": 2,
+      "to": 3,
+    },
+    "source": ",",
+    "type": "Comma",
+    "value": ",",
+  },
+  {
+    "range": {
+      "from": 3,
+      "to": 4,
+    },
+    "source": ",",
+    "type": "Comma",
+    "value": ",",
+  },
+]
+`;
+
+exports[`tokenizer should tokenize digits 1`] = `
+[
+  {
+    "range": {
+      "from": 0,
+      "to": 1,
+    },
+    "source": "0",
+    "type": "Digits",
+    "value": "0",
+  },
+  {
+    "range": {
+      "from": 2,
+      "to": 4,
+    },
+    "source": "01",
+    "type": "Digits",
+    "value": "01",
+  },
+  {
+    "range": {
+      "from": 5,
+      "to": 8,
+    },
+    "source": "002",
+    "type": "Digits",
+    "value": "002",
+  },
+]
+`;
+
+exports[`tokenizer should tokenize register 1`] = `
+[
+  {
+    "range": {
+      "from": 0,
+      "to": 2,
+    },
+    "source": "al",
+    "type": "Register",
+    "value": "AL",
+  },
+  {
+    "range": {
+      "from": 3,
+      "to": 5,
+    },
+    "source": "Bl",
+    "type": "Register",
+    "value": "BL",
+  },
+  {
+    "range": {
+      "from": 6,
+      "to": 8,
+    },
+    "source": "cL",
+    "type": "Register",
+    "value": "CL",
+  },
+  {
+    "range": {
+      "from": 9,
+      "to": 11,
+    },
+    "source": "DL",
+    "type": "Register",
+    "value": "DL",
+  },
+]
+`;
+
+exports[`tokenizer should tokenize string 1`] = `
+[
+  {
+    "range": {
+      "from": 0,
+      "to": 2,
+    },
+    "source": "\\"\\"",
+    "type": "String",
+    "value": "",
+  },
+  {
+    "range": {
+      "from": 3,
+      "to": 21,
+    },
+    "source": "\\"this is a string\\"",
+    "type": "String",
+    "value": "this is a string",
+  },
+  {
+    "range": {
+      "from": 22,
+      "to": 26,
+    },
+    "source": "\\"\\\\\\"\\"",
+    "type": "String",
+    "value": "\\"",
+  },
+  {
+    "range": {
+      "from": 27,
+      "to": 31,
+    },
+    "source": "\\"\\\\n\\"",
+    "type": "String",
+    "value": "
+",
+  },
+]
+`;
