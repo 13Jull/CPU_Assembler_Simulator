@@ -69,13 +69,13 @@ const sourceChangedMessage: EditorMessage = {
   content: 'Warning: Source code has changed since last assemble.',
 }
 
-
 export class Controller {
   private __id: number
 
   constructor() {
     this.__id = ++__controllerCounter
   }
+
   private stepIntervalId?: number
 
   private interruptIntervalId?: number
@@ -437,4 +437,3 @@ export class Controller {
     console.log(`[injectRandomAt][c${this.__id}] updated lastStep`)
   }
 }
-

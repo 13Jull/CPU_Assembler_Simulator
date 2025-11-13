@@ -6,6 +6,8 @@ import CardHeader from '@/common/components/CardHeader'
 import { ArrowDown, ArrowUp } from '@/common/components/icons'
 import { useToggle } from '@/common/hooks'
 import { classNames, decToHex, invariant, range } from '@/common/utils'
+// 👇 hook that gives us the Redux-based controller
+import { useController } from '@/features/controller/hooks'
 import { MAX_SP } from '@/features/cpu/core'
 import { selectCpuPointerRegisters } from '@/features/cpu/cpuSlice'
 
@@ -15,9 +17,6 @@ import {
   selectMemoryView,
 } from './memorySlice'
 import { selectMemorySourceRows } from './selectors'
-
-// 👇 hook that gives us the Redux-based controller
-import { useController } from '@/features/controller/hooks'
 console.log('[Memory.tsx] controller instance id:', (useController as any).__id)
 
 const Memory: FC = () => {
@@ -68,18 +67,17 @@ const Memory: FC = () => {
             <label className="flex items-center gap-1">
               Addr
               <input
-                type="number"
-                min={0}
+                className="border rounded px-1 w-20"
                 max={255}
+                min={0}
+                type="number"
                 value={addr}
                 onChange={(e) => setAddr(Number(e.target.value))}
-                className="border rounded px-1 w-20"
               />
             </label>
             <button
-              onClick={handleInject}
               className="bg-blue-500 text-white px-2 py-1 rounded text-sm"
-            >
+              onClick={handleInject}>
               Inject random data
             </button>
             {msg && <span className="text-gray-400">{msg}</span>}
@@ -117,8 +115,7 @@ const Memory: FC = () => {
                               'bg-blue-50':
                                 address > sp && address <= MAX_SP,
                             },
-                          )}
-                        >
+                          )}>
                           {memoryView === MemoryView.Hexadecimal
                             ? (invariant(typeof value === 'number'),
                               decToHex(value))
