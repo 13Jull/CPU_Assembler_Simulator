@@ -1,12 +1,12 @@
 import hardwareInterrupts from './hardware_interrupts.asm?raw'
 import keyboardInput from './keyboard_input.asm?raw'
+import parityBitExample from './parity_bit_example.asm?raw'
 import procedures from './procedures.asm?raw'
 import sevenSegmentDisplay from './seven_segment_display.asm?raw'
 import softwareInterrupts from './software_interrupts.asm?raw'
 import template from './template.asm?raw'
 import trafficLights from './traffic_lights.asm?raw'
 import visualDisplayUnit from './visual_display_unit.asm?raw'
-import parityBitExample from './parity_bit_example.asm?raw'
 
 const TITLE_REGEXP = /;\t(.*)/
 
