@@ -1,4 +1,4 @@
-;	Parity Bit Example (Parity Watchdog)
+;	Parity Bit Example (Parity Checking)
 ;---------------------------------------
 ; Parity watchdog over "Hello World!"
 ; Data bytes:  HELLO_STR .. HELLO_STR+0C
