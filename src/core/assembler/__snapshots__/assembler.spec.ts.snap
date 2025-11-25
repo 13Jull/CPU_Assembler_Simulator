@@ -74,6 +74,147 @@ exports[`Assembler > should assemble example Keyboard Input 1`] = `
 ]
 `;
 
+exports[`Assembler > should assemble example Parity Bit Example (Parity Checking) 1`] = `
+[
+  {
+    "buffer": Uint8Array [192, 15],
+    "offset": 0,
+  },
+  {
+    "buffer": Uint8Array [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33],
+    "offset": 2,
+  },
+  {
+    "buffer": Uint8Array [0],
+    "offset": 14,
+  },
+  {
+    "buffer": Uint8Array [208, 2, 0],
+    "offset": 15,
+  },
+  {
+    "buffer": Uint8Array [208, 1, 2],
+    "offset": 18,
+  },
+  {
+    "buffer": Uint8Array [208, 3, 13],
+    "offset": 21,
+  },
+  {
+    "buffer": Uint8Array [211, 0, 1],
+    "offset": 24,
+  },
+  {
+    "buffer": Uint8Array [172, 2, 0],
+    "offset": 27,
+  },
+  {
+    "buffer": Uint8Array [164, 1],
+    "offset": 30,
+  },
+  {
+    "buffer": Uint8Array [165, 3],
+    "offset": 32,
+  },
+  {
+    "buffer": Uint8Array [194, 246],
+    "offset": 34,
+  },
+  {
+    "buffer": Uint8Array [210, 112, 2],
+    "offset": 36,
+  },
+  {
+    "buffer": Uint8Array [192, 2],
+    "offset": 39,
+  },
+  {
+    "buffer": Uint8Array [208, 0, 192],
+    "offset": 41,
+  },
+  {
+    "buffer": Uint8Array [208, 1, 2],
+    "offset": 44,
+  },
+  {
+    "buffer": Uint8Array [211, 2, 1],
+    "offset": 47,
+  },
+  {
+    "buffer": Uint8Array [212, 0, 2],
+    "offset": 50,
+  },
+  {
+    "buffer": Uint8Array [164, 0],
+    "offset": 53,
+  },
+  {
+    "buffer": Uint8Array [164, 1],
+    "offset": 55,
+  },
+  {
+    "buffer": Uint8Array [211, 2, 1],
+    "offset": 57,
+  },
+  {
+    "buffer": Uint8Array [219, 2, 0],
+    "offset": 60,
+  },
+  {
+    "buffer": Uint8Array [194, 243],
+    "offset": 63,
+  },
+  {
+    "buffer": Uint8Array [192, 2],
+    "offset": 65,
+  },
+  {
+    "buffer": Uint8Array [208, 2, 0],
+    "offset": 67,
+  },
+  {
+    "buffer": Uint8Array [208, 1, 2],
+    "offset": 70,
+  },
+  {
+    "buffer": Uint8Array [208, 3, 13],
+    "offset": 73,
+  },
+  {
+    "buffer": Uint8Array [211, 0, 1],
+    "offset": 76,
+  },
+  {
+    "buffer": Uint8Array [172, 2, 0],
+    "offset": 79,
+  },
+  {
+    "buffer": Uint8Array [164, 1],
+    "offset": 82,
+  },
+  {
+    "buffer": Uint8Array [165, 3],
+    "offset": 84,
+  },
+  {
+    "buffer": Uint8Array [194, 246],
+    "offset": 86,
+  },
+  {
+    "buffer": Uint8Array [220, 2, 112],
+    "offset": 88,
+  },
+  {
+    "buffer": Uint8Array [193, 206],
+    "offset": 91,
+  },
+  {
+    "buffer": Uint8Array [192, 0],
+    "offset": 93,
+  },
+]
+`;
+
 exports[`Assembler > should assemble example Procedures 1`] = `
 [
   {

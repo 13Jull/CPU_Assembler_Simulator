@@ -1,6 +1,6 @@
 ;	Parity Bit Example (Parity Checking)
 ;---------------------------------------
-; Parity watchdog over "Hello World!"
+; Parity Checking over "Hello World!"
 ; Data bytes:  HELLO_STR .. HELLO_STR+0C
 ; (12 chars + 00 terminator = 13 bytes)
 ; Stored parity byte at RAM[70]
@@ -66,7 +66,7 @@ PRINTING:
 
 
 ;--------------------------------------
-; Parity checking watchdog
+; Parity checking algorithm
 ;--------------------------------------
 PARITY_CHECKING_INITIALIZATION:
         ; Initialise parity accumulator and pointers
